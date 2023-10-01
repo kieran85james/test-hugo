@@ -1,0 +1,18 @@
+name = "RCPH"
+description = "RCPH is a Hugo theme with Tailwind CSS and Alpine.js. The theme is based off of TailBliss (a Hugo Starter theme)."
+
+# The home page of the theme, where the source can be found.
+homepage = "https://github.com/cloudyne-projects/rcph"
+
+# If you have a running demo of the theme.
+demosite = "https://www.rcph.uk/"
+
+tags = ["blog", "tailwind", "tailwindcss", "dark", "light", "responsive", "minimal", "portfolio", "company", "gallery", "personal" ]
+features = ["blog", "categories", "webp", "tailwind3", "alpinejs"]
+
+min_version = "0.104.0"
+
+# If the theme has a single author
+[author]
+    name = "Kieran James"
+    homepage = ""

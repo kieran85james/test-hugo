@@ -1,0 +1,167 @@
+{{ define "main" }}
+<main>
+    <!-- Hero -->
+    <div class="bg-[url('/images/homepage/theme-hero-bg.webp')] bg-cover h-[480px]">
+        <div class="px-4 py-8 mx-auto h-full bg-neutral-700/[.95]">
+            <div class="grid items-center gap-8 mb-8 sm:mb-0 lg:gap-12 lg:grid-cols-12 h-full">
+                <div class="col-span-full px-4 text-center sm:mb-6 lg:text-center lg:mb-0">
+                    <img src="/images/rcph-logo-hero.png"
+                     class="transition-opacity w-40 group-hover:opacity-50 group-focus:opacity-70 mx-auto mb-2"
+                     alt="{{ .Site.Title }} Logo" />
+                    <h1 class="mb-2 text-[42px] font-extrabold leading-none tracking-tight text-secondary-700">
+                        {{ .Site.Title }}
+                    </h1>
+                    <h2 class="pb-2 font-light text-base text-neutral-50 mb-2">
+                        {{ .Site.Params.Moto }}
+                    </h2>
+                    <p class="max-w-xl mx-auto font-normal text-gray-900 lg:mx-0 xl:mb-2 md:text-lg xl:text-xl dark:text-gray-50 mb-2">
+                        {{ .Site.Params.Description}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Welcome -->
+    <div class="relative bg-neutral-100 pb-24">
+        <div class="h-[60px] mx-3 bg-secondary-700 flex justify-center items-center relative top-[-30px]">
+            <h2 class="text-2xl">Welcome.</h2>
+        </div>
+        <div class="flex justify-center mb-24">
+            <div class="icon-container top-14 left-16 w-[150px] h-[150px]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24"><path fill="#1E1E1E" d="M22 14h-2v2h-6v-3h2v-2h-2V6a2 2 0 0 0-2-2H4V2H2v8h2V8h6v3H8v2h2v5a2 2 0 0 0 2 2h8v2h2"/></svg>
+            </div>
+            <div class="icon-container top-20 left-11 w-[150px] h-[150px]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24"><path fill="#1E1E1E" d="M19.275 9.175L15.75 5.65l-2.125 2.1l-2.125-2.1l2.825-2.85q.3-.3.675-.437t.75-.138q.4 0 .763.138t.637.437l2.125 2.125q.45.425.663.988t.212 1.137q0 .575-.212 1.125t-.663 1ZM5.5 13.775q-.45-.45-.45-1.063t.45-1.062l2.45-2.475l2.125 2.125L7.6 13.775q-.425.45-1.038.45t-1.062-.45ZM4.425 21.2q-.275-.3-.425-.662t-.15-.763q0-.4.138-.762t.437-.663L11.5 11.3L8.325 8.1q-.45-.425-.45-1.037T8.325 6q.425-.45 1.05-.45T10.45 6l3.175 3.175L15.05 7.75l2.8 2.85q.3.3.3.7t-.3.7q-.3.3-.7.3t-.7-.3l-9.2 9.2q-.3.3-.663.438t-.737.137q-.375 0-.75-.15t-.675-.425Z"/></svg>
+            </div>
+            <div class="z-[3] icon-container top-10 w-[200px] h-[200px] bg-[url('/images/homepage/theme-hero-bg.webp')] bg-cover bg-center"></div>
+            <div class="z-[2] icon-container top-20 right-11 w-[150px] h-[150px]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 512 512"><path fill="#1E1E1E" d="M462.4 24.96c-2.6.1-5.1 1.03-7.1 3.08L244 239.3c12.7 4.6 24.1 16.1 28.8 28.7L483.9 56.76c10.3-10.19-6.8-31.04-20.3-31.8h-1.2zM232.2 255.2c-2.6 0-5.1 1-7.1 3.1l-27.4 27.2l-6.4-6.3c-17.4-17.5-51.1-23-85.9-17.8c-16.67 2.4-33.36 7.2-48.33 13.7c6.45 2.3 13.23 5.4 20.36 9.2C103.1 298 133 320.8 162.1 350c29.1 29.1 52 59 65.7 84.6c3.8 7.1 6.9 13.8 9.2 20.3c6.4-15 11.2-31.7 13.7-48.3c5.1-34.8-.3-68.4-17.9-85.9l-6.3-6.4l27.2-27.3c10.3-10.1-6.8-31-20.3-31.8zM34.68 288.4c-4.25-.1-6.56.9-7.67 2c-1.46 1.5-2.76 5.1-1.56 12.6c1.21 7.5 5.09 17.7 11.25 29.4c12.58 23.3 34.5 52.3 62.56 80.4c28.14 28 57.14 50 80.44 62.6c11.7 6.1 21.9 10 29.4 11.2c7.5 1.2 11.1-.1 12.5-1.6c1.5-1.4 2.9-5.1 1.6-12.5c-1.2-7.5-5.1-17.7-11.2-29.4c-12.6-23.3-34.5-52.3-62.6-80.4c-28.1-28.1-57.12-50-80.46-62.6c-11.67-6.1-21.92-10-29.34-11.2c-1.88-.3-3.51-.5-4.92-.5z"/></svg>
+            </div>
+            <div class="icon-container top-14 right-16 w-[150px] h-[150px]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24"><path fill="#1E1E1E" d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8c0 2.4-1 4.5-2.7 6c-1.4-1.3-3.3-2-5.3-2s-3.8.7-5.3 2C5 16.5 4 14.4 4 12a8 8 0 0 1 8-8m2 1.89c-.38.01-.74.26-.9.65l-1.29 3.23l-.1.23c-.71.13-1.3.6-1.57 1.26c-.41 1.03.09 2.19 1.12 2.6c1.03.41 2.19-.09 2.6-1.12c.26-.66.14-1.42-.29-1.98l.1-.26l1.29-3.21l.01-.03c.2-.51-.05-1.09-.56-1.3c-.13-.05-.26-.07-.41-.07M10 6a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1M7 9a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1m10 0a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1Z"/></svg>
+            </div>
+        </div>
+        <div class="flex justify-center items-center gap-x-32 text-base mb-12">
+            <p>Name: Kieran James</p>
+            <p>Age: 32</p>
+            <p>Experience: 7+ Years</p>
+        </div>
+        <p class="mx-40 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nobis autem incidunt? Sit neque a eius molestias consequatur quae. Tempora ipsam repellat, ea beatae cumque esse modi commodi tempore voluptatem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam porro vel enim voluptatum saepe commodi nobis cupiditate quisquam recusandae quia aperiam, unde illum autem eius, libero accusantium voluptates deleniti sapiente.</p>
+    </div>
+
+    <!-- Recent -->
+    <div class="relative bg-primary pb-24 h-[800px]">
+        <div class="h-[60px] mx-3 bg-secondary-700 flex justify-center items-center relative top-[-30px]">
+            <h2 class="text-2xl">Recent.</h2>
+        </div>
+    </div>
+
+    <!-- Consultation -->
+    <div class="relative bg-neutral-100 pb-24">
+        <div class="h-[60px] mx-3 bg-secondary-700 flex justify-center items-center relative top-[-30px] mb-8">
+            <h2 class="text-2xl">Consultation.</h2>
+        </div>
+        <p class="mx-40 text-center mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dicta distinctio necessitatibus quia et blanditiis perspiciatis debitis! Adipisci commodi voluptate vel omnis perspiciatis quo, quisquam possimus quod alias expedita corporis?</p>
+        <div class="flex justify-center items-center gap-x-48">
+            <div class="flex justify-center items-center">
+                <div class="flex justify-center items-center group">
+                    <svg class="fill-neutral-700 group-hover:fill-secondary-700" xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 1024 1024"><path fill-opacity=".1" d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-32 736H663.9V602.2h104l15.6-120.7H663.9v-77.1c0-35 9.7-58.8 59.8-58.8h63.9v-108c-11.1-1.5-49-4.8-93.2-4.8c-92.2 0-155.3 56.3-155.3 159.6v89H434.9v120.7h104.3V848H176V176h672v672z"/></svg>
+                    <p class="absolute text-2xl">facebook.com/rcph</p>
+                </div>
+            </div>
+            <div class="flex justify-center items-center">
+                <div class="flex justify-center items-center group">
+                    <svg class="fill-neutral-700 group-hover:fill-secondary-700" xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 24 24"><g fill-opacity=".1"><path d="M13 16h-2v2h2v-2Z"/><path fill-rule="evenodd" d="M5 4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4Zm2 0h10v16H7V4Z" clip-rule="evenodd"/></g></svg>
+                    <p class="absolute text-2xl">07498 199820</p>
+                </div>
+            </div>
+            <div class="flex justify-center items-center">
+                <div class="flex justify-center items-center group">
+                    <svg class="fill-neutral-700 group-hover:fill-secondary-700" xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 24 24"><path fill-opacity=".1" d="M4 20q-.825 0-1.413-.588T2 18V6q0-.825.588-1.413T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.588 1.413T20 20H4Zm8-7L4 8v10h16V8l-8 5Zm0-2l8-5H4l8 5ZM4 8V6v12V8Z"/></svg>
+                    <p class="absolute text-2xl">facebook.com/rcph</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog section -->
+    <!-- <div class="relative px-1 pt-8 pb-4 bg-transparent lg:px-8 lg:pt-12 lg:mb-4 md:mt-12">
+        <div class="absolute inset-0">
+            <div class="bg-gray-200 dark:bg-gray-900/50 h-1/3 sm:h-2/3"></div>
+        </div>
+        <div class="relative px-2 mx-auto max-w-7xl">
+            <div class="text-center">
+                <h2 class="text-3xl font-black tracking-tight text-primary-500 dark:text-primary-300 sm:text-4xl">
+                    {{ .Site.Params.P4.Heading }}
+                </h2>
+                {{ range .Site.Params.P4.Content }}
+                <p class="max-w-2xl mx-auto mt-3 text-xl text-gray-500 dark:text-gray-300 sm:mt-4">
+                    {{ .text }}
+                </p>
+                {{ end }}
+            </div>
+
+            <div class="mx-auto text-gray-900 max-w-7xl dark:text-gray-50 md:px-1.5">
+                <div class="px-4 text-gray-900 dark:text-white not-prose dark:text-zinc-200">
+                    <div class="grid gap-4 mx-auto mt-12 mb-4 lg:max-w-none md:grid-cols-3">
+                        {{ range (.Paginator 3).Pages }}
+                        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50 dark:bg-gray-900">
+                            <a href="{{.Permalink}}">
+                                {{ with .Params.featured_image }}
+                                {{ with resources.Get . }}
+                                {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
+                                <img src="{{ $postimage }}" class="object-fill overflow-hidden rounded-t-lg" width="100%" height="" loading="lazy" alt="{{ .Title }}" />
+
+                                {{ end }}
+                                {{ end }}
+                            </a>
+                            <div class="p-6">
+                                <div class="flex-1">
+                                    <a href="{{.Permalink}}" class="block mt-2 text-2xl font-black text-gray-900 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-500 hover:underline">
+                                        {{ .Title }}
+                                    </a>
+                                    <p class="mt-3 text-base text-gray-900 dark:text-gray-300">
+                                        {{ .Params.summary }}
+                                    </p>
+                                </div>
+                                <div class="flex pt-6 font-medium text-primary-600 dark:text-primary-100 text-md">
+                                    <span class="pr-2 font-black">Tags:</span>
+                                    {{ range $elem_index, $elem_val := (.GetTerms "tags") }}
+                                    {{- if gt $elem_index 0 }}, {{ end -}}
+                                    <a href="{{ .Permalink }}" class="inline-flex items-center rounded-md bg-gray-300 hover:bg-primary-200 hover:text-black px-2.5 py-0.5 text-sm font-medium text-gray-900 ">{{ .LinkTitle }}</a>
+                                    {{- end -}}
+                                </div>
+                                <div class="flex items-center mt-6">
+                                    <div class="flex-shrink-0">
+                                        <span class="sr-only">{{ .Params.author }}</span>
+                                        {{ with .Params.authorimage }}
+                                        {{ with resources.Get . }}
+                                        {{ $authorimage := (.Resize "400x webp").RelPermalink }}
+                                        <img class="w-10 h-10 rounded-full" src="{{ $authorimage }}" alt="">
+                                        {{ end }}
+                                        {{ end }}
+                                    </div>
+                                    <div class="pt-1 ml-3">
+                                        <p class="text-sm font-medium text-gray-900 dark:text-white">
+                                            {{ .Params.author }}
+                                        </p>
+                                        <div class="flex space-x-1 text-sm text-gray-500 dark:text-white">
+                                            <time datetime="2020-02-12">{{.Date.Format "2006-01-02"}}</time>
+                                            <span aria-hidden="true">&middot;</span>
+                                            <span>{{ math.Round (div (countwords .Content) 220.0) }}
+                                                min read</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+</main>
+{{ end }}
