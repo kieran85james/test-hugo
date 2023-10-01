@@ -2040,14 +2040,6 @@ html {
   background-color: rgb(14 17 158 / var(--tw-bg-opacity));
 }
 
-.hover\:fill-yellow-700:hover {
-  fill: #a16207;
-}
-
-.hover\:fill-secondary-700:hover {
-  fill: #F8A024;
-}
-
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
