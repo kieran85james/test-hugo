@@ -1,10 +1,10 @@
 <div class="top-0 z-50 w-full text-gray-200 bg-primary md:sticky">
     <div x-data="{ open: false }"
-         class="flex flex-col max-w-full px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+         class="flex flex-col max-w-full px-4 py-2 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div class="flex flex-row items-center justify-between">
             <a href="/" class="flex text-gray-100 transition duration-1000 ease-in-out group">
                 <img src="/images/rcph-logo.png"
-                     class="transition-opacity w-44 group-hover:opacity-50 group-focus:opacity-70"
+                     class="transition-opacity w-28 group-hover:opacity-50 group-focus:opacity-70"
                      alt="{{ .Site.Title }} Logo" />
             </a>
             <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open" role="navigation" aria-expanded="false" aria-label="Main" aria-controls="menuItems">
@@ -111,10 +111,21 @@
                     </div>
                 </div>
             </div>
+            {{ else if (eq "elementlink" .Pre) }}
+            <a class="group px-4 py-2 mt-2 rounded-lg md:mt-0 md:ml-4 text-base text-white focus:outline-none focus:shadow-outline"
+                href="{{ .URL }}" title="{{ .Title | default .Name }}">
+                {{ .Name }}
+                <div class="relative px-4 w-full h-[1px] mt-[-1px]">
+                    <div class="absolute bottom-0 left-0 w-0 h-full bg-secondary-700 transition-all duration-300 group-hover:w-full"></div>
+                </div>
+            </a>
             {{ else }}
-            <a class="px-4 py-2 mt-2 rounded-lg md:mt-0 md:ml-4 text-base text-white hover:text-white focus:text-white hover:underline underline-offset-5 focus:underline decoration-secondary-700 focus:outline-none focus:shadow-outline"
+            <a class="group px-4 py-2 mt-2 rounded-lg md:mt-0 md:ml-4 text-base text-white focus:outline-none focus:shadow-outline"
                 href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }}">
                 {{ .Name }}
+                <div class="relative px-4 w-full h-[1px] mt-[-1px]">
+                    <div class="absolute bottom-0 left-0 w-0 h-full bg-secondary-700 transition-all duration-300 group-hover:w-full"></div>
+                </div>
             </a>
             {{ end }}
             {{ end }}

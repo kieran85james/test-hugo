@@ -1,4 +1,4 @@
-baseURL: 'https://kieran85james.github.io/test-hugo/'
+baseURL: 'https://rcph.uk/'
 title: RC Plumbing & Heating
 theme: 'rcph'
 languageCode: en-gb
@@ -47,11 +47,15 @@ markup:
       xhtml: false
 
 params:
-  author: Nusser Studios
+  author: Rhys Cottam
+  dob: 1994-08-04
+  experience: 2012-08-04
   authorimage: ../assets/images/global/author.webp
   og_image: /images/tailbliss-cover.png
+  phone: '07498 199820'
+  email: 'info@rcph.uk'
   moto: "Fueling progress & ensuring safety."
-  description: ""
+  description: "Welcome to RC Plumbing & Heating, your trusted source for professional gas engineering and plumbing services. Specializing in gas line installations, boiler repairs, plumbing fixtures, and more. Serving south east England, we pride ourselves on delivering top-quality workmanship, exceptional customer service, and competitive pricing. Contact us today for reliable and efficient plumbing and gas solutions."
   disable_theme_toggle: true
   disable_stay_uptodate: false
 
@@ -103,6 +107,7 @@ params:
     facebook:
       enabled: true
       url: 'https://facebook.com/nusserstudios'
+      clean_url: 'facebook.com/nusserstudios'
     instagram:
       enabled: true
       url: 'https://instagram.com/nusserstudios'
@@ -118,20 +123,23 @@ menu:
       url: /
       weight: 10
     - identifier: welcome
+      pre: elementlink
       name: Welcome
-      url: /welcome/
+      url: '/#welcome'
       weight: 20
     - identifier: recent
+      pre: elementlink
       name: Recent
-      url: /recent/
+      url: '/#recent'
       weight: 30
     - identifier: projects
       name: Projects
       url: /projects/
       weight: 40
     - identifier: consultation
+      pre: elementlink
       name: Consultation
-      url: /consultation/
+      url: '/#consultation'
       weight: 50
     # - identifier: recent
     #   pre: dropdown
@@ -169,27 +177,27 @@ menu:
       post: "Take a look at your statistics"
       url: "#"
       weight: 30
-  footer:
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 10
-    - identifier: blog
-      name: Blog
-      url: /categories/blog/
-      weight: 20
-    - identifier: news
-      name: News
-      url: /categories/news/
-      weight: 30
-    - identifier: prose
-      name: Prose
-      url: /prose/
-      weight: 40
-    - identifier: contact
-      name: Contact
-      url: /contact/
-      weight: 50
+  # footer:
+  #   - identifier: about
+  #     name: About
+  #     url: /about/
+  #     weight: 10
+  #   - identifier: blog
+  #     name: Blog
+  #     url: /categories/blog/
+  #     weight: 20
+  #   - identifier: news
+  #     name: News
+  #     url: /categories/news/
+  #     weight: 30
+  #   - identifier: prose
+  #     name: Prose
+  #     url: /prose/
+  #     weight: 40
+  #   - identifier: contact
+  #     name: Contact
+  #     url: /contact/
+  #     weight: 50
 
 markup:
   goldmark:
